@@ -1,0 +1,251 @@
+/* assets/css/order-confirmation.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f2f4;
+}
+
+/* Header Styles */
+.header-section {
+    background: #2874f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    padding: 8px 0;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    padding: 8px 16px !important;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Main Content */
+.confirmation-container {
+    padding: 40px 0;
+}
+
+.confirmation-card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    padding: 40px;
+    text-align: center;
+}
+
+.success-icon {
+    font-size: 60px;
+    color: #28a745;
+    margin-bottom: 24px;
+    animation: bounceIn 0.8s ease;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.confirmation-card h1 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #212121;
+    margin-bottom: 8px;
+}
+
+.confirmation-card p {
+    color: #878787;
+    margin-bottom: 24px;
+}
+
+.order-summary {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.order-summary strong {
+    color: #212121;
+}
+
+.order-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* Order Details Section */
+.order-details-section {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    margin-top: 24px;
+    padding: 24px;
+}
+
+.order-details-section h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Order Item */
+.order-item {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.order-item:last-child {
+    border-bottom: none;
+}
+.order-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+.order-item-details {
+    flex-grow: 1;
+}
+.order-item-title {
+    font-weight: 500;
+    color: #212121;
+}
+.order-item-price {
+    color: #212121;
+    font-weight: 600;
+}
+.order-item-quantity {
+    color: #878787;
+    font-size: 14px;
+}
+
+/* Info Cards (Payment & Address) */
+.info-card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.info-card h5 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.payment-details .payment-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 14px;
+}
+
+.delivery-address .address-name {
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.delivery-address .address-details {
+    color: #878787;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Recommended Products */
+.recommended-section {
+    margin-top: 24px;
+}
+.recommended-section h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.recommended-product {
+    background: #fff;
+    border-radius: 4px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 16px;
+}
+.recommended-product:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+.recommended-product img {
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+.recommended-product-title {
+    font-size: 14px;
+    color: #212121;
+}
+.recommended-product-price {
+    font-weight: 600;
+}
+
+
+/* Footer */
+.footer-section {
+    background: #172337;
+    color: #fff;
+    padding: 40px 0 20px;
+    margin-top: 40px;
+}
+
+.footer-section h5 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #878787;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #2874f0;
+}

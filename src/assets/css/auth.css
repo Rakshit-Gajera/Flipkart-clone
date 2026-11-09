@@ -1,0 +1,585 @@
+/* Auth Pages Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f2f4;
+}
+
+.navbar {
+    padding: 8px 0;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.search-container {
+    max-width: 500px;
+}
+
+.search-input {
+    border: none;
+    border-radius: 2px 0 0 2px;
+    padding: 12px 16px;
+    font-size: 14px;
+    outline: none;
+    box-shadow: none;
+}
+
+.search-input:focus {
+    border-color: #2874f0;
+    box-shadow: 0 0 0 0.2rem rgba(40, 116, 240, 0.25);
+}
+
+.search-btn {
+    background: #fff;
+    border: none;
+    border-radius: 0 2px 2px 0;
+    padding: 12px 16px;
+    color: #2874f0;
+}
+
+.search-btn:hover {
+    background: #f0f0f0;
+    color: #2874f0;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    padding: 8px 16px !important;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #e6e6e6 !important;
+}
+
+.nav-link.active {
+    color: #ffeb3b !important;
+}
+
+.cart-count {
+    background: #ff6161;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    min-width: 18px;
+    height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+}
+
+/* Auth Container */
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.auth-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Welcome Section */
+.auth-welcome {
+    background: linear-gradient(135deg, #2874f0 0%, #1e5db8 100%);
+    color: white;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 500px;
+    text-align: center;
+}
+
+.auth-welcome h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.auth-welcome p {
+    font-size: 16px;
+    opacity: 0.9;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.welcome-image {
+    margin-top: auto;
+}
+
+.welcome-image img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+/* Auth Form */
+.auth-form {
+    padding: 40px 30px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #212121;
+    font-size: 14px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 14px;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    background: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #2874f0;
+    box-shadow: 0 0 0 0.2rem rgba(40, 116, 240, 0.25);
+    outline: none;
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+}
+
+.password-input {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #878787;
+    cursor: pointer;
+    padding: 4px;
+    transition: color 0.3s ease;
+}
+
+.password-toggle:hover {
+    color: #2874f0;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 4px;
+    min-height: 16px;
+}
+
+.form-text {
+    color: #878787;
+    font-size: 11px;
+    line-height: 1.4;
+    margin-top: 8px;
+}
+
+.form-text a {
+    color: #2874f0;
+    text-decoration: none;
+}
+
+.form-text a:hover {
+    text-decoration: underline;
+}
+
+.form-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.form-check-input {
+    margin: 0;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.form-check-label {
+    font-size: 12px;
+    color: #212121;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.form-check-label a {
+    color: #2874f0;
+    text-decoration: none;
+}
+
+.form-check-label a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.btn-login {
+    background: #fb641b;
+    border: none;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    transition: background 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-login:hover {
+    background: #e25514;
+    color: white;
+}
+
+.btn-login:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.btn-text {
+    transition: opacity 0.3s ease;
+}
+
+.btn-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-login.loading .btn-text {
+    opacity: 0;
+}
+
+.btn-login.loading .btn-spinner {
+    display: block !important;
+}
+
+.btn-otp {
+    background: transparent;
+    border: 1px solid #2874f0;
+    color: #2874f0;
+    padding: 14px 24px;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.btn-otp:hover {
+    background: #2874f0;
+    color: white;
+}
+
+/* Form Divider */
+.form-divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.form-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #e0e0e0;
+}
+
+.form-divider span {
+    background: #fff;
+    padding: 0 16px;
+    color: #878787;
+    font-size: 12px;
+    position: relative;
+}
+
+/* Auth Links */
+.auth-links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.forgot-password {
+    color: #2874f0;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.auth-switch {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.auth-switch span {
+    color: #878787;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.create-account {
+    color: #2874f0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.create-account:hover {
+    text-decoration: underline;
+}
+
+/* Success Modal */
+.success-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.success-icon {
+    font-size: 60px;
+    color: #388e3c;
+    margin-bottom: 20px;
+}
+
+.success-content h4 {
+    color: #212121;
+    margin-bottom: 16px;
+}
+
+.success-content p {
+    color: #878787;
+    margin-bottom: 0;
+}
+
+/* Footer */
+.footer-section {
+    background: #172337;
+    color: #fff;
+    padding: 40px 0 20px;
+    margin-top: 0;
+}
+
+.footer-section h5 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #878787;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #2874f0;
+}
+
+.footer-links i {
+    margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-container {
+        max-width: 200px;
+        margin: 0 8px !important;
+    }
+    
+    .auth-container {
+        padding: 20px 0;
+    }
+    
+    .auth-card {
+        margin: 0 16px;
+    }
+    
+    .auth-welcome {
+        padding: 30px 20px;
+        min-height: auto;
+    }
+    
+    .auth-welcome h2 {
+        font-size: 24px;
+    }
+    
+    .auth-welcome p {
+        font-size: 14px;
+    }
+    
+    .auth-form {
+        padding: 30px 20px;
+        min-height: auto;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .form-control {
+        padding: 12px 14px;
+    }
+    
+    .btn-login,
+    .btn-otp {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .auth-card .row {
+        flex-direction: column-reverse;
+    }
+    
+    .auth-welcome {
+        padding: 20px 16px;
+        text-align: center;
+    }
+    
+    .welcome-image {
+        margin-top: 20px;
+    }
+    
+    .auth-form {
+        padding: 20px 16px;
+    }
+    
+    .auth-welcome h2 {
+        font-size: 20px;
+    }
+    
+    .form-control {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+    
+    .btn-login,
+    .btn-otp {
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+}
+
+/* Animation for form validation */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+.form-control.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Loading animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.fa-spinner {
+    animation: spin 1s linear infinite;
+}
+
+/* Utility Classes */
+.text-primary {
+    color: #2874f0 !important;
+}
+
+.bg-primary {
+    background-color: #2874f0 !important;
+}
+
+.btn-primary {
+    background-color: #2874f0;
+    border-color: #2874f0;
+}
+
+.btn-primary:hover {
+    background-color: #1e5db8;
+    border-color: #1e5db8;
+}
+
+/* Replace the existing auth-container and auth-card styles in src/assets/css/auth.css */
+
+.auth-container {
+    min-height: calc(100vh - 56px); /* 56px is approx header height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #f1f2f4;
+}
+
+.auth-card {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%; /* The parent col will handle max-width */
+}
